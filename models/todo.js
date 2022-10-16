@@ -25,12 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     deleteATodo() {
-      try {
-        this.destroy();
-        return true;
-      } catch (error) {
-        return false;
-      }
+      this.destroy();
     }
   }
   Todo.init(
